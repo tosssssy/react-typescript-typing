@@ -1,10 +1,11 @@
-import "./styles.css";
+import { MainContainer } from "./components/MainContainer";
+export const App = () => {
+  const isPlaying: boolean = true;
 
-export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <>
+      <div>time</div>
+      {isPlaying ? <MainContainer difficulty={2} /> : <div>result</div>}
+    </>
   );
-}
+};
